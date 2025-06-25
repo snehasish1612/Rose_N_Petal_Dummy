@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose N Petal - Responsive Clone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white main_header">
+        <div class="container">
+            <div class="d-none d-lg-flex justify-content-end align-items-center flex-wrap gap-3">
+
+                <div class="d-none d-lg-block">
+                    <span>
+                        +91 7355080808 |
+                        <a href="#" class="text-white text-decoration-none">Help</a> |
+                        Currency INR | Corporate Gifts
+                    </span>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="partnerDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Partner With Us
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="partnerDropdown">
+                        <li><a class="dropdown-item" href="#">Wedding Enquiry</a></li>
+                        <li><a class="dropdown-item" href="#">Franchise Enquiry</a></li>
+                        <li><a class="dropdown-item" href="https://forms.gle/LQXm5QnEhJAycXe18">Become a Partner</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="text-white text-decoration-none">Track Order</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://rosenpetal.com/wp-content/uploads/profile-3.png" alt="Rose N Petal"
+                        style="max-width: 180px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Right Side -->
+                    <form class="d-flex me-3">
+                        <input class="form-control me-2" type="search" placeholder="Search for products"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login / Register </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img
+                                    src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                    alt="Compare Products" width="24" height="24"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img
+                                    src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                    alt="Wishlist" width="24" height="24"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img
+                                    src="https://cdn0.iconfinder.com/data/icons/minimal-set-seven/32/minimal-49-1024.png"
+                                    alt="Cart" width="24" height="24"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Category Menu Bar (Secondary Navigation) -->
+    <nav class="navbar navbar-expand-lg bg-white border-top shadow-sm menu_bar">
+        <div class="container">
+            <!-- Label on small devices -->
+            <span class="d-lg-none fw-bold">Categories</span>
+
+            <!-- 🟩 Distinct Toggler for Category Menu -->
+            <button class="navbar-toggler border-0 shadow-sm" type="button" data-bs-toggle="collapse"
+                data-bs-target="#categoryMenu" aria-controls="categoryMenu" aria-expanded="false"
+                aria-label="Toggle categories">
+                <!-- Use grid icon instead of hamburger -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                    <path
+                        d="M1 1v4h4V1H1zm5 0v4h4V1H6zm5 0v4h4V1h-4zM1 6v4h4V6H1zm5 0v4h4V6H6zm5 0v4h4V6h-4zM1 11v4h4v-4H1zm5 0v4h4v-4H6zm5 0v4h4v-4h-4z" />
+                </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="categoryMenu">
+                <ul class="navbar-nav d-flex flex-wrap flex-row gap-2 justify-content-start py-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="anniversaryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Anniversary</a>
+                        <ul class="dropdown-menu" aria-labelledby="anniversaryDropdown">
+                            <li>
+                                <h6 class="dropdown-header">Gift Type</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Relation</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Occasion</h6>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="birthdayDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Birthday</a>
+                        <ul class="dropdown-menu" aria-labelledby="birthdayDropdown">
+                            <li>
+                                <h6 class="dropdown-header">By Type</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Relation</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Gift For</h6>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="flowersDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Flowers</a>
+                        <ul class="dropdown-menu" aria-labelledby="flowersDropdown">
+                            <li>
+                                <h6 class="dropdown-header">By Type</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Name</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Colour</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Combos</h6>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="cakesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Cakes</a>
+                        <ul class="dropdown-menu" aria-labelledby="cakesDropdown">
+                            <li>
+                                <h6 class="dropdown-header">By Type</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Flavours</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Occasion</h6>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="chocolatesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Chocolates</a>
+                        <ul class="dropdown-menu" aria-labelledby="chocolatesDropdown">
+                            <li>
+                                <h6 class="dropdown-header">By Type</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Brand</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Occasion</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Combos</h6>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="plantsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Plants</a>
+                        <ul class="dropdown-menu" aria-labelledby="plantsDropdown">
+                            <li>
+                                <h6 class="dropdown-header">By Category</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Name</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">By Occasion</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Pot & Planters</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Combos</h6>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Combos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="toysDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Toys</a>
+                        <ul class="dropdown-menu" aria-labelledby="toysDropdown">
+                            <li>
+                                <h6 class="dropdown-header">Soft Toys</h6>
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Teddy Bear</h6>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item d-none d-lg-block ms-auto">
+                        <a class="nav-link" href="#">
+                            <img src="https://rosenpetal.com/wp-content/uploads/cropped-Webp.net-resizeimage-1-1.png"
+                                width="25" height="25" alt="Download App"> | DOWNLOAD THE APP
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main class="container my-4">
+        <!-- Info Box Carousel Section -->
+        <section class="my-5">
+            <div id="infoBoxCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row text-center">
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/present_501761-2400-modified-removebg-preview-modified-150x150.png"
+                                        class="img-fluid rounded-circle mb-2" alt="All Gifts">
+                                    <p class="fw-bold">All Gifts</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/tasty-chocolate-drip-cake-with-melting-chocolate-dark_72479-441-modified-150x150.png"
+                                        class="img-fluid rounded-circle mb-2" alt="Cakes">
+                                    <p class="fw-bold">Cakes</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/wedding-flowers-bridal-bouquet-closeup_194236-28-modified-150x150.png"
+                                        class="img-fluid rounded-circle mb-2" alt="Flowers">
+                                    <p class="fw-bold">Flowers</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/cup-mockup-with-floral-decoration_23-2147671306-modified-150x150.png"
+                                        class="img-fluid rounded-circle mb-2" alt="Personalised">
+                                    <p class="fw-bold">Personalised</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/succulent-background-concept-cozy-home-flower_325774-1406-modified-150x150.png"
+                                        class="img-fluid rounded-circle mb-2" alt="Plants">
+                                    <p class="fw-bold">Plants</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/pile-broken-chocolate-table-against-brown-background-hot-chocolate-spray_155003-32381-modified-150x150.png"
+                                        class="img-fluid rounded-circle mb-2" alt="Chocolates">
+                                    <p class="fw-bold">Chocolates</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more carousel-item for additional slides if needed -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#infoBoxCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#infoBoxCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Promotional Banners Section -->
+        <section class="my-5">
+            <div class="row g-4">
+                <div class="col-md-5 banner_four">
+                    <div class="card bg-dark text-white border-0 rounded-3 overflow-hidden">
+                        <img src="https://rosenpetal.com/wp-content/uploads/several-indoor-plants-cacti-pots-with-scoop-rake-empty-gray-background_505557-7252-e1707311324319.jpg"
+                            class="card-img opacity-75" alt="Plants for your home">
+                        <div class="card-img-overlay d-flex flex-column justify-content-start p-4">
+                            <h6 class="card-subtitle mb-2 text-white-50">Plants for your picture-perfect home</h6>
+                            <h3 class="card-title fw-bold">Beautify your Spaces</h3>
+                            <a href="#" class="btn btn-primary mt-auto align-self-start">TO
+                                SHOP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 banner_four">
+                    <div class="card bg-light text-dark border-0 rounded-3 overflow-hidden">
+                        <img src="https://rosenpetal.com/wp-content/uploads/240_F_709561968_hvaShz7LM0bYZ9RZoZpiRDkuDcnEvElm-e1707311958551.jpg"
+                            class="card-img opacity-75" alt="Floral Surprise">
+                        <div class="card-img-overlay d-flex flex-column justify-content-start p-4">
+                            <h6 class="card-subtitle mb-2 text-muted">Happiness Blooms from Within</h6>
+                            <h3 class="card-title fw-bold">Floral Surprise</h3>
+                            <p class="card-text text-muted">Brighter up their day. Fresh Flowers for all occasions</p>
+                            <a href="#" class="btn btn-outline-dark mt-auto align-self-start">Celebrate occasions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="row g-4">
+                <div class="col-md-7 banner_four">
+                    <div class="card bg-dark text-white border-0 rounded-3 overflow-hidden">
+                        <img src="https://rosenpetal.com/wp-content/uploads/front-view-delicious-cake-concept_23-2148769292-e1707311266248.jpg"
+                            class="card-img opacity-75" alt="Delicious Cakes">
+                        <div class="card-img-overlay d-flex flex-column justify-content-start p-4">
+                            <h6 class="card-subtitle mb-2 text-white-50">Happiness in Every Bites</h6>
+                            <h3 class="card-title fw-bold">Delicious Cakes</h3>
+                            <p class="card-text text-white-50">Delivered in 3 hours. Make their BIG day BIGGER</p>
+                            <a href="#" class="btn btn-outline-light mt-auto align-self-start">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 banner_four">
+                    <div class="card bg-light text-dark border-0 rounded-3 overflow-hidden">
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/roller-pen-chocolate-combo_1.jpg"
+                            class="card-img opacity-75" alt="Combos">
+                        <div class="card-img-overlay d-flex flex-column justify-content-start p-4">
+                            <h6 class="card-subtitle mb-2 text-muted">All-in-one Curated Collections</h6>
+                            <h3 class="card-title fw-bold">Combos</h3>
+                            <a href="#" class="btn btn-primary mt-auto align-self-start">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gift Finder Section -->
+        <section class="my-5 p-4 bg-light rounded-3 shadow-lg">
+            <div class="row">
+                <div class="col-md-2">
+                    <h4 class="fw-bold">Gift Finder</h4>
+                </div>
+                <div class="col-md-10">
+                    <form class="row g-3 align-items-center">
+                        <div class="col-md-6">
+                            <label for="giftCategory" class="form-label visually-hidden">Category</label>
+                            <select class="form-select" id="giftCategory">
+                                <option selected>Gifts, Flowers, Cakes and more</option>
+                                <option value="1st-anniversary-cake">1st Anniversary Cake</option>
+                                <option value="1st-birthday-cake">1st Birthday Cake</option>
+                                <option value="25th-anniversary-cake">25th Anniversary Cake</option>
+                                <option value="air-purifying-plants">Air Purifying Plants</option>
+                                <option value="amul-chocolates">Amul Chocolates</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="anniversary-cakes">Anniversary Cakes</option>
+                                <option value="anniversary-chocolates">Anniversary Chocolates</option>
+                                <option value="anniversary-flowers">Anniversary Flowers</option>
+                                <option value="anniversary-gift-for-bhaiya-bhabhi">Anniversary Gift for Bhaiya Bhabhi
+                                </option>
+                                <option value="anniversary-gift-for-didi-jiju">Anniversary Gift for Didi Jiju</option>
+                                <option value="anniversary-gift-for-grand-parents">Anniversary Gift for Grand Parents
+                                </option>
+                                <option value="anniversary-gift-for-husband">Anniversary Gift for Husband</option>
+                                <option value="anniversary-gift-for-parents">Anniversary Gift for Parents</option>
+                                <option value="anniversary-gift-for-wife">Anniversary Gift for Wife</option>
+                                <option value="anniversary-gifts">Anniversary Gifts</option>
+                                <option value="anniversary-plants">Anniversary Plants</option>
+                                <option value="anniversary-balloon-decorations">Balloon Decorations (Anniversary)
+                                </option>
+                                <option value="birthday-balloon-decorations">Balloon Decorations (Birthday)</option>
+                                <option value="basket-collection">Basket Collection</option>
+                                <option value="bestseller-cakes">Bestseller Cakes</option>
+                                <option value="bestseller-chocolates">Bestseller Chocolates</option>
+                                <option value="bestseller-plants">Bestseller Plants</option>
+                                <option value="bestsellers-flowers">Bestsellers Flowers</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="birthday-chocolates">Birthday Chocolates</option>
+                                <option value="birthday-combos">Birthday Combos</option>
+                                <option value="birthday-flowers">Birthday Flowers</option>
+                                <option value="birthday-plants">Birthday Plants</option>
+                                <option value="black-forest-cakes">Black Forest Cakes</option>
+                                <option value="bonsai-plants">Bonsai Plants</option>
+                                <option value="bouquet-collection">Bouquet Collection</option>
+                                <option value="box-collection">Box Collection</option>
+                                <option value="boyfriend">Boyfriend</option>
+                                <option value="brownies">Brownies</option>
+                                <option value="butterscotch-cakes">Butterscotch Cakes</option>
+                                <option value="cadbury-chocolates">Cadbury Chocolates</option>
+                                <option value="cake-combos">Cake Combos</option>
+                                <option value="cakes">Cakes</option>
+                                <option value="cakes-for-kids">Cakes for kids</option>
+                                <option value="caramel-cakes">Caramel Cakes</option>
+                                <option value="carnation-flowers">Carnation Flowers</option>
+                                <option value="ceramic-pots">Ceramic Pots</option>
+                                <option value="cheese-cakes">Cheese Cakes</option>
+                                <option value="chocolate-bouquet">Chocolate Bouquet</option>
+                                <option value="chocolate-cake">Chocolate Cake</option>
+                                <option value="chocolate-combos">Chocolate Combos</option>
+                                <option value="chocolate-n-cake">Chocolate N Cake</option>
+                                <option value="chocolate-n-flowers">Chocolate N Flowers</option>
+                                <option value="chocolate-n-plant">Chocolate N Plant</option>
+                                <option value="chocolates">Chocolates</option>
+                                <option value="coffee-cakes">Coffee Cakes</option>
+                                <option value="combos">Combos</option>
+                                <option value="concrete-pots">Concrete Pots</option>
+                                <option value="congratulations-cake">Congratulations Cake</option>
+                                <option value="cup-cakes">Cup Cakes</option>
+                                <option value="dark-chocolate">Dark Chocolate</option>
+                                <option value="designer-cake">Designer Cake</option>
+                                <option value="dry-cakes">Dry Cakes</option>
+                                <option value="eggless-cakes">Eggless Cakes</option>
+                                <option value="exotic-flowers">Exotic Flowers</option>
+                                <option value="explosion-box">Explosion Box</option>
+                                <option value="ferro-rocher">Ferro Rocher</option>
+                                <option value="ficus-plants">Ficus Plants</option>
+                                <option value="five-star-cakes">Five Star Cakes</option>
+                                <option value="flower-arrangements">Flower Arrangements</option>
+                                <option value="flower-combos">Flower Combos</option>
+                                <option value="flower-n-cake">Flower N Cake</option>
+                                <option value="flower-n-chocolate">Flower N Chocolate</option>
+                                <option value="flowering-plants">Flowering Plants</option>
+                                <option value="flowers">Flowers</option>
+                                <option value="flowers-n-teddy">Flowers N Teddy</option>
+                                <option value="folk-art">Folk Art</option>
+                                <option value="forever-roses">Forever Roses</option>
+                                <option value="friend">Friend</option>
+                                <option value="fruit-cakes">Fruit Cakes</option>
+                                <option value="gerbera-flowers">Gerbera Flowers</option>
+                                <option value="gifts">Gifts</option>
+                                <option value="girlfriend">Girlfriend</option>
+                                <option value="glass-pots">Glass Pots</option>
+                                <option value="good-luck-plants">Good Luck Plants</option>
+                                <option value="grand-parents">Grand Parents</option>
+                                <option value="half-cakes">Half Cakes</option>
+                                <option value="heart-shaped-cakes">Heart Shaped Cakes</option>
+                                <option value="her">Her</option>
+                                <option value="hersheys-chocolates">Hersheys Chocolates</option>
+                                <option value="him">Him</option>
+                                <option value="housewarming-plants">Housewarming Plants</option>
+                                <option value="husband">Husband</option>
+                                <option value="indoor-plants">Indoor Plants</option>
+                                <option value="jade-plant">Jade Plant</option>
+                                <option value="kids">Kids</option>
+                                <option value="lilies">Lilies Flowers</option>
+                                <option value="love-romance">Love & Romance</option>
+                                <option value="love-romance-plants">Love & Romance (Plants)</option>
+                                <option value="lucky-bamboo">Lucky Bamboo</option>
+                                <option value="milk-chocolate">Milk Chocolate</option>
+                                <option value="mix-colour-flowers">Mix Colour Flowers</option>
+                                <option value="mixed-flowers">Mixed Flowers</option>
+                                <option value="money-plants">Money Plants</option>
+                                <option value="mug">Mug</option>
+                                <option value="new-arrival-cake">New Arrival Cake</option>
+                                <option value="nuts-chocolate">Nuts Chocolate</option>
+                                <option value="orange-flowers">Orange Flowers</option>
+                                <option value="orchid-flowers">Orchid Flowers</option>
+                                <option value="oreo-cake">Oreo Cake</option>
+                                <option value="outdoor-plants">Outdoor Plants</option>
+                                <option value="parents">Parents</option>
+                                <option value="peace-lily">Peace Lily</option>
+                                <option value="photo-cake">Photo Cake</option>
+                                <option value="pineapple-cakes">Pineapple Cakes</option>
+                                <option value="pink-flowers">Pink Flowers</option>
+                                <option value="plant-combos">Plant Combos</option>
+                                <option value="plant-sets">Plant Sets</option>
+                                <option value="plants">Plants</option>
+                                <option value="plants-with-flowers">Plants with Flowers</option>
+                                <option value="premium-flowers">Premium Flowers</option>
+                                <option value="purple-flowers">Purple Flowers</option>
+                                <option value="red-flowers">Red Flowers</option>
+                                <option value="red-velvet-cakes">Red Velvet Cakes</option>
+                                <option value="rose-cakes">Rose Cakes</option>
+                                <option value="rose-flowers">Rose Flowers</option>
+                                <option value="siblings">Siblings</option>
+                                <option value="soft-toys">Soft Toys</option>
+                                <option value="strawberry-cakes">Strawberry Cakes</option>
+                                <option value="succulents-n-cactus">Succulents N Cactus</option>
+                                <option value="succulents-n-cactuses">Succulents N Cactuses</option>
+                                <option value="sugarfree-cakes">Sugarfree Cakes</option>
+                                <option value="syngonium">Syngonium</option>
+                                <option value="teddy-bear">Teddy Bear</option>
+                                <option value="terrariums-plants">Terrariums Plants</option>
+                                <option value="thank-you">Thank You</option>
+                                <option value="toys">Toys</option>
+                                <option value="truffle-cake">Truffle Cake</option>
+                                <option value="uncategorized">Uncategorized</option>
+                                <option value="vanilla-cakes">Vanilla Cakes</option>
+                                <option value="vase-collection">Vase Collection</option>
+                                <option value="wafer-chocolate">Wafer Chocolate</option>
+                                <option value="walnut-cake">Walnut Cake</option>
+                                <option value="wedding-cake">Wedding Cake</option>
+                                <option value="white-chocolate">White Chocolate</option>
+                                <option value="white-flowers">White Flowers</option>
+                                <option value="wife">Wife</option>
+                                <option value="yellow-flowers">Yellow Flowers</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="priceRange" class="form-label visually-hidden">Price Range</label>
+                            <select id="priceRange" class="form-select">
+                                <option value="selected">Price Range</option>
+                            </select>
+
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary w-100">Filter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Introduction -->
+        <section class="text-center my-5">
+            <h4 class="fw-bold">Order Flowers and Gifts Perfect for All Your Occasions in India</h4>
+            <p class="text-muted">Rose N Petal is the perfect online destination to order flowers and gifts for your
+                loved ones for all your occasions. We created special arrangements to make people feel loved and cared
+                about.</p>
+        </section>
+
+        <!-- Product Display Sections (Example: Beautiful Flowers) -->
+        <section class="my-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="fw-bold">Beautiful Flowers</h4>
+                <a href="#" class="btn btn-outline-secondary">view all</a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Product Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/personalised-red-roses-arrangement_1.jpg"
+                            class="card-img-top" alt="Personalised Red Roses Arrangement">
+                        <div class="card-body">
+                            <p class="card-title">Personalised Rose Display</p>
+                            <p class="card-text fw-bold">₹1137.41</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/pristine-white-roses-bunch_1.jpg"
+                            class="card-img-top" alt="Pristine White Roses Bunch">
+                        <div class="card-body">
+                            <p class="card-title">Pristine White Roses Bunch</p>
+                            <p class="card-text fw-bold">₹671.68</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/enigmatic-8-red-roses-bouquet_1.jpg"
+                            class="card-img-top" alt="Enigmatic 8 Red Roses Bouquet">
+                        <div class="card-body">
+                            <p class="card-title">Enigmatic 8 Red Roses Bouquet</p>
+                            <p class="card-text fw-bold">₹494.13</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/extravagant-40-red-roses-arrangement_1.jpg"
+                            class="card-img-top" alt="Extravagant Red Roses Arrangement">
+                        <div class="card-body">
+                            <p class="card-title">Luxury Red Roses</p>
+                            <p class="card-text fw-bold">₹2,405.28</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bestseller Cakes Section -->
+        <section class="my-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="fw-bold">Bestseller Cakes</h4>
+                <a href="#" class="btn btn-outline-secondary">view all</a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Product Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/chocolate-fudge-cake-half-kg_1.jpg"
+                            class="card-img-top" alt="Chocolate Fudge Cake Half Kg">
+                        <div class="card-body">
+                            <p class="card-title">Chocolate Fudge Cake Half Kg</p>
+                            <p class="card-text fw-bold">₹599.00 – ₹1,999.00</p>
+                            <button class="btn btn-primary w-100">Select options</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/pink-bow-wrap-chocolate-cake-1-kg_1.jpg"
+                            class="card-img-top" alt="Pink Bow Wrap Chocolate Cake">
+                        <div class="card-body">
+                            <p class="card-title">Pink Bow Wrap Chocolate Cake</p>
+                            <p class="card-text fw-bold">₹2,149.00 – ₹5,449.00</p>
+                            <button class="btn btn-primary w-100">Select options</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/crunchy-butterscotch-cake-half-kg_1.jpg"
+                            class="card-img-top" alt="Crunchy Butterscotch Cake">
+                        <div class="card-body">
+                            <p class="card-title">Crunchy Butterscotch Cake</p>
+                            <p class="card-text fw-bold">₹649.00 – ₹1,149.00</p>
+                            <button class="btn btn-primary w-100">Select options</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/designer-chocolate-cream-cake-half-kg_1.jpg"
+                            class="card-img-top" alt="Designer Chocolate Cream Cake">
+                        <div class="card-body">
+                            <p class="card-title">Designer Chocolate Cream Cake</p>
+                            <p class="card-text fw-bold">₹599.00 – ₹1,999.00</p>
+                            <button class="btn btn-primary w-100">Select options</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chocolates Section -->
+        <section class="my-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="fw-bold">Chocolates</h4>
+                <a href="#" class="btn btn-outline-secondary">view all</a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Product Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/teddy-and-chocolate-basket_1.jpg"
+                            class="card-img-top" alt="Teddy and Chocolate Basket">
+                        <div class="card-body">
+                            <p class="card-title">Teddy and Chocolate Basket</p>
+                            <p class="card-text fw-bold">₹1,217.41</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/complete-love-hamper-combo_1.jpg"
+                            class="card-img-top" alt="Win Her Heart Love Combo With Chocolate Cake">
+                        <div class="card-body">
+                            <p class="card-title">Win Her Heart Combo</p>
+                            <p class="card-text fw-bold">₹2,599.00</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/roller-pen-chocolate-combo_1.jpg"
+                            class="card-img-top" alt="Roller Pen & Chocolate Combo">
+                        <div class="card-body">
+                            <p class="card-title">Roller Pen & Chocolate Combo</p>
+                            <p class="card-text fw-bold">₹528.71</p>
+                            <button class="btn btn-secondary w-100" disabled>Sold out</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/three-layer-chocolaty-wishes_1.jpg"
+                            class="card-img-top" alt="Dairy Milk Chocolate & Eclairs Arrangement">
+                        <div class="card-body">
+                            <p class="card-title">Dairy Milk & Eclairs Combo</p>
+                            <p class="card-text fw-bold">₹1,731.90</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plants Section -->
+        <section class="my-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="fw-bold">Plants</h4>
+                <a href="#" class="btn btn-outline-secondary">view all</a>
+            </div>
+           <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Product Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/money-plant-with-green-metal-pot_1.jpg"
+                            class="card-img-top" alt="Money Plant with Green Metal Pot">
+                        <div class="card-body">
+                            <p class="card-title">Money Plant with Green Metal Pot</p>
+                            <p class="card-text fw-bold">₹574.32</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/money-plant-in-lucky-to-have-you-glass-pot_1.jpg"
+                            class="card-img-top" alt="Money Plant In Lucky To Have You Glass Pot">
+                        <div class="card-body">
+                            <p class="card-title">Lucky Money Plant – Glass Pot</p>
+                            <p class="card-text fw-bold">₹680.05</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/money-plant-personalised-white-mug_1.jpg"
+                            class="card-img-top" alt="Money Plant Personalised White Mug">
+                        <div class="card-body">
+                            <p class="card-title">Money Plant Personalised White Mug</p>
+                            <p class="card-text fw-bold">₹934.54</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/money-plant-and-red-rose-bouquet_1.jpg"
+                            class="card-img-top" alt="Money Plant & Red Rose Bouquet">
+                        <div class="card-body">
+                            <p class="card-title">Money Plant & Red Rose Bouquet</p>
+                            <p class="card-text fw-bold">₹971.92</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combos Section -->
+        <section class="my-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="fw-bold">Combos</h4>
+                <a href="#" class="btn btn-outline-secondary">view all</a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
+
+
+                <!-- Product Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/the_music_of_love_-_6945.jpg"
+                            class="card-img-top" alt="The Music Of Love">
+                        <div class="card-body">
+                            <p class="card-title">The Music Of Love</p>
+                            <p class="card-text fw-bold">₹8,024.77</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/34816_celebration-moment.jpeg"
+                            class="card-img-top" alt="Celebration Moment">
+                        <div class="card-body">
+                            <p class="card-title">Celebration Moment</p>
+                            <p class="card-text fw-bold">₹1,249.00</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/40594_delicious-beauty.jpeg"
+                            class="card-img-top" alt="Delicious Beauty">
+                        <div class="card-body">
+                            <p class="card-title">Delicious Beauty</p>
+                            <p class="card-text fw-bold">₹797.50</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-none">
+                        <div class="floating_btn">
+                            <img src="https://t4.ftcdn.net/jpg/13/91/47/17/240_F_1391471733_aPYGjqnDHkcJafQ9LX0as5mGKJR0esRu.jpg"
+                                alt="Compare">
+                            <img src="https://img.icons8.com/ios7/600/search.png" alt="Search">
+                            <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                                alt="Wishlist">
+                        </div>
+                        <img src="https://rosenpetal.com/wp-content/uploads/2021/08/35058_sweetly-crisp-1.jpeg"
+                            class="card-img-top" alt="Sweetly Crisp">
+                        <div class="card-body">
+                            <p class="card-title">Sweetly Crisp</p>
+                            <p class="card-text fw-bold">₹1,493.88</p>
+                            <button class="btn btn-primary w-100">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="my-5 text-center">
+            <h2 class="fw-bold">Rose N Petal Blog</h2>
+            <h4 class="mb-3" style="color: #7baa27;">Travel ideas, recipes, stories and opinions that you will love!
+            </h4>
+            <p class="text-muted mb-4">Your free guide to fresh ideas, literally! Find fresh seasonal produce recipes
+                and gift ideas, explore our weekly specials & recipes, find the latest home decor trends and more on the
+                blog.</p>
+
+            <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <section class="my-5">
+                        <div class="row g-4">
+                            <div class="col-md-3 banner_four">
+                                <div class="card bg-dark text-white border-0 rounded-3 overflow-hidden">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/bithday-gift-for-your-brother-who-love-music-150x150.jpg"
+                                        class="card-img opacity-75" alt="">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-center p-4">
+                                        <a href="#" class="btn btn-primary mt-auto align-self-center btn-sm">Family</a>
+                                        <h4 class="card-title fw-bold">
+                                            Harmonious Celebrations: Thoughtful Birthday Gifts For Your Music Loving
+                                            Brother
+                                        </h4>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 banner_four">
+                                <div class="card bg-light text-dark border-0 rounded-3 overflow-hidden">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/friend-proposes-another-friend-in-your-gang-150x150.jpg"
+                                        class="card-img opacity-75" alt="">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-center p-4">
+                                        <a href="#" class="btn btn-primary mt-auto align-self-center btn-sm">Family</a>
+                                        <h4 class="card-title fw-bold">
+                                            Becoming Love in the Gang: A Valentine's Day Proposal
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 banner_four">
+                                <div class="card bg-dark text-white border-0 rounded-3 overflow-hidden">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/2.-Glamour.weddingaffair-1-150x150.jpg"
+                                        class="card-img opacity-75" alt="">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-center p-4">
+                                        <a href="#" class="btn btn-primary mt-auto align-self-center btn-sm">Family</a>
+                                        <h4 class="card-title fw-bold">
+                                            Celebrating Double Love: The Perfect Gift for Your Bestfriend's Wedding
+                                            within the Gang
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 banner_four">
+                                <div class="card bg-light text-dark border-0 rounded-3 overflow-hidden">
+                                    <img src="https://rosenpetal.com/wp-content/uploads/the_prettiest_summer_wedding-150x150.webp"
+                                        class="card-img opacity-75" alt="">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-center p-4">
+                                        <a href="#" class="btn btn-primary mt-auto align-self-center btn-sm">Family</a>
+                                        <h4 class="card-title fw-bold">
+                                            Honoring Timeless Bonds: Selecting the Ideal Gift for Your Closest Friend's
+                                            Wedding at Rose N Petal
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!--Info section-->
+        <section class="information">
+            <div>
+                <h2>Flower Delivery in India</h2>
+                <p>Fresh flowers enhance your décor. We take the quality of our products and designs seriously and help
+                    customers to select gifts. Our wide range of fresh flowers and gifts ensure that every occasion and
+                    personal floral preference is covered. At Rose N Petal, we make sending beautiful flowers & gifts
+                    easier
+                    than ever! With just a few clicks you can reach the desired product page, you can browse through our
+                    fine selection of flowers, cakes, gifts and all for every special occasion.</p>
+                <p>We believe that flowers are the best way to show your love and how much you care, so we arrange the
+                    finest flowers to ensure that it leaves a blissful memory every time we send flowers.</p>
+            </div>
+            <div>
+                <h2>Flower Shopping on a Budget</h2>
+                <p>Our bouquets and luxury flower arrangements are available in various sizes to suit your needs and
+                    budget.</p>
+                <p>With our full-service floral design and delivery—we try to provide the most unique designs from fresh
+                    cut flowers and beautiful designs to major special events and one of a kind wedding celebrations. We
+                    make elegance effortless.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FAQ Section -->
+    <section class="my-5">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <h5>Can I send gifts online in India?</h5>
+                        <p>Yes, and it’s easy as well with Rose N Petal. We have a bespoke collection of flower bouquets
+                            and
+                            floral arrangements to suit the requirements of any special occasion.</p>
+                    </div>
+                    <div>
+                        <h5>Why Choose Rose N Petal to send gifts online?</h5>
+                        <p>Rose N Petal stands apart from other online flower shops in India due to our love for flowers
+                            and commitment to exceeding customer expectations. Whether it be an infinity rose, orchid
+                            flower plant, or a giant flower bouquet, you can expect to receive the freshest flowers at
+                            the best market prices.</p>
+                    </div>
+                    <div>
+                        <h5>I forgot to add an item to my order, what do I do?</h5>
+                        <p>Contact us if you need to add, remove or change items from your order.</p>
+                    </div>
+                    <div>
+                        <h5>Do you have a retail shop in India?</h5>
+                        <p>No, we are an online florist, catering to corporate, personal floral & gifting needs or fresh
+                            cake with same-day delivery, fixed time & midnight delivery options.</p>
+                    </div>
+                    <div>
+                        <h5>To which locations do you deliver in India?</h5>
+                        <p>Customers based all across India are welcome to order flowers, gifts or cakes from our online
+                            shop. We provide same-day as well as midnight and morning deliveries within India. For more
+                            information, contact us today!</p>
+                    </div>
+                    <div>
+                        <h5>Do I have to register to make a purchase?</h5>
+                        <p>Yes, you need to register. Alternatively, you can place your order by logging in through
+                            alternatives such as Facebook, and Google Accounts to log in directly. In all cases, we’ll
+                            need to collect your email address and phone number to facilitate delivering your order. But
+                            we advise you to register as your account comes with a range of benefits and handy tools; it
+                            allows you to manage your current orders, you’ll be able to receive members-only exclusive
+                            offers, and will get quicker support from our customer care team.</p>
+                    </div>
+                    <div>
+                        <h5>The order I received was not acceptable, how can I contact you?</h5>
+                        <p>Please contact us through one of our support channels, our customer care representative will
+                            help you out with any order-related issues/inquiries you have. Also, you can contact us on
+                            our WhatsApp numbers at +91 7355080808 / +91 9888141097</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h5>I need help ordering online</h5>
+                        <p>Browse through our website and select one or more of our products that you wish to buy. Once
+                            you’ve made your choice, add the specific products to the shopping cart and select a
+                            delivery date. You can also mention any special instructions to customize your product at
+                            this stage. Once it’s done, simply checkout, enter your delivery information and make the
+                            required payment.</p>
+                    </div>
+                    <div>
+                        <h5>Do you call the recipient?</h5>
+                        <p>In some cities and cases, our delivery agents will need to call the recipient first even if
+                            the address is complete to check their availability and to make sure there are no
+                            restrictions in the area.</p>
+                    </div>
+                    <div>
+                        <h5>Do you offer promotions?</h5>
+                        <p>Yes, we do! Make sure you register with us and download our application on Apple Store or
+                            Google Play to be notified upon launching any promotional campaign.</p>
+                    </div>
+                    <div>
+                        <h5>How can I check on my orders?</h5>
+                        <p>Please contact us through one of our support channels, our customer care representative will
+                            help you out with any inquiries you have. Also, you can contact us on our WhatsApp numbers
+                            at +91 7355080808 / +91 9888141097</p>
+                    </div>
+                    <div>
+                        <h5>Do you offer cash on delivery?</h5>
+                        <p>No, we are SORRY, we do not accept COD.</p>
+                    </div>
+                    <div>
+                        <h5>Can my order be delivered if I don’t know the exact address of the recipient?</h5>
+                        <p>Of course! You have done your part to make someone happy, so let us handle the rest! As long
+                            as you can provide us with the correct mobile number to reach the recipient, we will contact
+                            them to arrange the best location and time of delivery (we promise we won’t ruin the
+                            surprise either). Alternatively, you can also provide us with a Google Map link to be placed
+                            under the recipient's address details even if you don’t know the exact delivery details.</p>
+                    </div>
+                    <div>
+                        <h5>What cards do you accept?</h5>
+                        <p>We accept all major credit or debit cards such as Visa, MasterCard, and American Express. We
+                            also accept payments through Digital Wallets.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Review Section-->
+    <div id="carouselExampleDark" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="https://rosenpetal.com/wp-content/uploads/christmas-background-with-text-space.jpg"
+                    class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2 class="text-white fw-bold">Customer Review</h2>
+                    <p class="text-white w-75">
+                        I had a pleasant experience with them. The customer service was very helpful and responsive. Mr.
+                        Bapi Paria (Mohali) kept me updated and ensured the bouquet arrived just as requested.
+                    </p>
+                    <strong class="text-white">Jasmeet Kaur</strong>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://rosenpetal.com/wp-content/uploads/christmas-background-with-text-space.jpg"
+                    class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2 class="text-white fw-bold">Customer Review</h2>
+                    <p class="text-white w-75">
+                        Beautiful arrangement and on-time delivery. The flowers were fresh and the packaging was
+                        elegant. Truly impressed with the quality and professionalism. Highly recommended!
+                    </p>
+                    <strong class="text-white">Amit Verma</strong>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://rosenpetal.com/wp-content/uploads/christmas-background-with-text-space.jpg"
+                    class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2 class="text-white fw-bold">Customer Review</h2>
+                    <p class="text-white w-75">
+                        Ordered a custom bouquet for my parent's anniversary. The team was extremely supportive and even
+                        shared pictures before delivery. Very thoughtful and responsive!
+                    </p>
+                    <strong class="text-white">Ritika Sen</strong>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://rosenpetal.com/wp-content/uploads/christmas-background-with-text-space.jpg"
+                    class="d-block w-100" alt="Slide 4">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2 class="text-white fw-bold">Customer Review</h2>
+                    <p class="text-white w-75">
+                        Their service exceeded my expectations. The delivery guy was courteous, and the floral gift was
+                        even better than the photos. Keep up the great work!
+                    </p>
+                    <strong class="text-white">Sourav Dutta</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Additional Info-->
+    <section class="my-5 d-none d-lg-block">
+        <div class="container">
+            <div class="row text-start">
+                <div class="col">
+                    <h5>100% Secure Payments</h5>
+                    <p>All major credit & debit cards accepted</p>
+                </div>
+                <div class="col">
+                    <h5>2000+ Orders Delivered</h5>
+                    <p>Customers across the world</p>
+                </div>
+                <div class="col">
+                    <h5>Delivery In 2 Hrs</h5>
+                    <p>India's Largest Flower Delivery Network</p>
+                </div>
+                <div class="col">
+                    <h5>3000+ Locations</h5>
+                    <p>FREE Shipping across India</p>
+                </div>
+                <div class="col">
+                    <h5>Satisfaction Guranteed</h5>
+                    <p>2000+ gifting ideas with high quality</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Rose N Petal is dedicated to providing the best flowers, cakes, and gifts for all occasions. We
+                        promise a delivery in 3 hours across India with FREE shipping!</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:info@rosenpetal.com" class="text-white">info@rosenpetal.com</a></li>
+                        <li><a href="tel:+917355080808" class="text-white">+91 7355080808</a></li>
+                        <li><a href="#" class="text-white">Contact Form</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Rose N Petal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
