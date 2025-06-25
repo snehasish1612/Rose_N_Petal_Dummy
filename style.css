@@ -1,0 +1,387 @@
+/* General Body Styling */
+body {
+    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    /* Using a common sans-serif font */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #000 !important;
+    /* Dark background for top bar */
+    color: #d9d9db !important;
+    font-size: 0.85rem;
+}
+
+header a {
+    color: #d9d9db !important;
+}
+
+.main_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.navbar-brand img {
+    max-width: 180px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: #242424;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #7baa27;
+    /* Primary color from original site */
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 5;
+}
+
+.menu_bar .dropdown-menu .dropdown-item {
+    color: #333;
+    font-size: 0.85rem;
+
+}
+
+
+
+.dropdown-menu .dropdown-header {
+    font-weight: bold;
+    color: #555;
+    /* padding: 0.5rem 1rem; */
+}
+
+.dropdown-menu .dropdown-header:hover{
+    cursor: pointer;
+    color: #6a9a22;
+}
+
+.navbar-nav>.nav-item {
+    position: relative;
+}
+
+.navbar-nav>.nav-item>.dropdown-menu {
+    top: 100%;
+    margin-top: 0;
+}
+
+/* Info Box Carousel */
+#infoBoxCarousel .carousel-item .row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#infoBoxCarousel img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#infoBoxCarousel img:hover {
+    transform: scale(1.05);
+}
+
+/* Promotional Banners */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-img-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+}
+
+.card-img-overlay h3,
+.card-img-overlay h6,
+.card-img-overlay p {
+    color: #fff;
+}
+
+.card-img-overlay .btn {
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+/* Adjust for the light banner */
+.card.bg-light .card-img-overlay {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+.card.bg-light .card-img-overlay h3,
+.card.bg-light .card-img-overlay h6,
+.card.bg-light .card-img-overlay p {
+    color: #333;
+}
+
+.banner_four .card:hover img {
+    transform: scale(1.2);
+    font-size: 40px;
+    transition: all 0.5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transition-delay: 0.1s;
+}
+
+/* Gift Finder */
+#giftCategory,
+#priceRange {
+    border-radius: 5px;
+}
+
+/* Product Cards */
+.card{
+    display: flex;
+}
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.product-card .card-body {
+    text-align: center;
+
+}
+
+
+
+.card .floating_btn {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 17%;
+    height: 30%;
+    border-radius: 7px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transform: translateX(110%);
+    transition: opacity 0.5s ease, transform o.5s ease;
+    transition-duration: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card:hover .floating_btn {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.floating_btn img {
+    background-color: white;
+    margin: 1px;
+    width: 80%;
+    height: 33%;
+}
+
+.floating_btn img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+
+/* Custom Button Colors */
+.btn-primary {
+    background-color: #7baa27 !important;
+    border-color: #7baa27 !important;
+}
+
+.btn-primary:hover {
+    background-color: #6a9a22 !important;
+    border-color: #6a9a22 !important;
+}
+
+.btn-outline-dark {
+    color: #333 !important;
+    border-color: #333 !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+/* Review Section*/
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item:hover{
+    cursor: grab;
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    padding: 0 2rem;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    /* White links */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: #7baa27;
+    /* Primary color when expanded */
+    color: #fff;
+    /* White text when expanded */
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+    /* Light background for body */
+}
+
+
+
+/* Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .main_header .d-flex {
+    flex-direction: column !important;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .menu_bar ul.navbar-nav {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+
+  .product_card .floating_btn {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .card-img-overlay h3 {
+    font-size: 1.25rem;
+  }
+
+  .card-img-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption p {
+    width: 100% !important;
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+
+  section.information {
+    padding: 1rem;
+  }
+
+  .information h2 {
+    font-size: 1.25rem;
+  }
+
+  .information p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Medium devices (tablets, 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main_header .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu_bar ul.navbar-nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .floating_btn {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card-img-overlay h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-img-overlay p {
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .carousel-caption {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .menu_bar .navbar-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
